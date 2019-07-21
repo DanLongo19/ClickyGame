@@ -1,0 +1,19 @@
+{
+  "name": "hw15-clickygame",
+  "version": "1.0.0",
+  "description": "homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanLongo19/HW15-ClickyGame.git"
+  },
+  "author": "DL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanLongo19/HW15-ClickyGame/issues"
+  },
+  "homepage": "https://github.com/DanLongo19/HW15-ClickyGame#readme"
+}
