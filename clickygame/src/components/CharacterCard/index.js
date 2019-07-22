@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function FriendCard(props) {
+function CharacterCard(props) {
   return (
     <div className="card">
       <div className="img-container">
@@ -13,12 +13,15 @@ function FriendCard(props) {
             <strong>Name:</strong> {props.name}
           </li>
         </ul>
-      </div>
-      <span onClick={() => props.addPoint(props.id)} className="point">
-        X
-      </span>
-    </div>
+</div></div>
   );
 }
 
-export default FriendCard;
+export default CharacterCard;
+
+
+// </div>
+// <span onClick={() => props.addPoint(props.id)} className="point">
+//   X
+// </span>
+// </div>

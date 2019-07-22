@@ -1,34 +1,34 @@
 import React, { Component } from "react";
-import FriendCard from "./components/FriendCard";
+import CharacterCard from "./components/CharacterCard";
 import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
-import friends from "./friends.json";
+import Header from "./components/Header";
+import characters from "./characters.json";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+  // Setting this.state.characters to the characters json array
   state = {
-    friends
+    characters
   };
 
   addPoint = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter(friend => friend.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ friends });
+    // Filter this.state.characters for characters with an id not equal to the id being removed
+    const characters = this.state.characters.filter(character => character.id !== id);
+    // Set this.state.characters equal to the new characters array
+    this.setState({ characters });
   };
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+  // Map over this.state.characters and render a CharacterCard component for each character object
   render() {
     return (
       <Wrapper>
-        <Title>Clicky Game</Title>
-        {this.state.friends.map(friend => (
-          <FriendCard
+        <Header>Clicky Game</Header>
+        {this.state.characters.map(character => (
+          <CharacterCard
             addPoint={this.addPoint}
-            id={friend.id}
-            key={friend.id}
-            name={friend.name}
-            image={friend.image}
+            id={character.id}
+            key={character.id}
+            name={character.name}
+            image={character.image}
           />
         ))}
       </Wrapper>
