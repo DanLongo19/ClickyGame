@@ -2,6 +2,7 @@
 
 To Do's:
 
-1. Eliminate the deleting onclick and change that to an image randomizer
-2. Add a navbar to keep track of scoring
-3. Make sure that single clicks add 1 point and any duplicate clicks cause Game Over (and potential to restart the game)
+1. Add a navbar to keep track of scoring
+2. Scoring is logging in the console but I need to get this reflected in the navbar
+3. The first click automates to Game Over so I think I need to switch up where that is run (currently running before addPoint)
+
